@@ -1,0 +1,36 @@
+.hero{
+    min-height: 100vh;
+    background-color: rgb(187, 62, 62);
+}
+.hero .img img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero .swiper{
+    position: relative;
+}
+.hero .swiper button{
+    /* position: absolute; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    font-size: 30px;
+    height: 100vh;
+    width: 70px;
+    background-color: #00000051;
+    color: #fff;
+}
+.hero .swiper button:first-of-type{
+    left: 0;
+}
+.hero .swiper button:last-of-type{
+    right: 0;
+}
+@media (max-width: 767px) {
+    .hero .swiper button{
+        width: 30px;
+        font-size: 20px;
+    }
+}

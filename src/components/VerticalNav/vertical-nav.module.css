@@ -1,0 +1,53 @@
+.verticalNav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    border-left: 1px solid #eee;
+    transition: var(--main-transition);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.verticalNav.shown{
+    transform: translateX(0%);
+}
+.verticalNav > *{
+    margin-left: auto;
+    margin-right: auto;
+}
+.verticalNav > :nth-child(2){
+    margin-top: 10px;
+}
+.verticalNav h3{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 14px;
+}
+.verticalNav .links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.verticalNav .links li{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.verticalNav .links a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.verticalNav .links a:hover{
+    background-color: var(--main-color);
+}
+.verticalNav > :last-child{
+    margin-right: 20px;
+    margin-left: 20px;
+}
