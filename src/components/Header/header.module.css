@@ -32,10 +32,10 @@
     display: none;
 }
 .header .close{
-    color: var(--text-color);
+    color: #fff;
     width: 26px;
     cursor: pointer;
-    background-color: var(--bg-color);
+    background-color: var(--logo-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +44,7 @@
     right: -150px;
     padding: 4px 10px;
     border-radius: 6px 0px 0px 6px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--logo-color);
     transition: var(--main-transition);
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

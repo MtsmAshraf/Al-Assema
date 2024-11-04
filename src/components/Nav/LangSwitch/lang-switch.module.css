@@ -17,6 +17,6 @@
     border-radius: 0px 6px 6px 0px;
 }
 .langSwitch span.active{
-    background-color: var(--main-color);
+    background-color: var(--logo-color);
     color: #fff;
 }

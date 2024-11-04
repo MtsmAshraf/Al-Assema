@@ -1,0 +1,27 @@
+.mainBtn{
+    border: 1px solid var(--logo-color);
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+.mainBtn a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--main-transition);
+}
+.mainBtn a:has(svg){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mainBtn a:has(svg) svg{
+    font-size: 12px;
+}
+.mainBtn:hover{
+    background-color: var(--logo-color);
+}
+.mainBtn:hover a{
+    color: #fff;
+    gap: 10px;
+}
