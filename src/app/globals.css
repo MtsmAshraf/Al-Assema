@@ -17,6 +17,10 @@
   --p-color: #424242;
   --main-transition: all 0.2s 0s linear;
 }
+::selection{
+  background-color: var(--logo-color);
+  color: #fff;
+}
 body{
   background-color: var(--bg-color);
   color: var(--text-color);

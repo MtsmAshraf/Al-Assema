@@ -18,3 +18,42 @@
         grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
 }
+.productCards > a{
+    width: 250px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.productCards > a:hover{
+    color: var(--logo-color);
+}
+.productCards > a .cardImg{
+    transition: var(--main-transition);
+    /* width: 250px; */
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+.productCards > a .cardImg img{
+    transition: var(--main-transition);
+    height: 250px;
+}
+.productCards > a:hover .cardImg img{
+    transform: scale(1.1);
+}
+.productCards > a p{
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .productCards > a{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
