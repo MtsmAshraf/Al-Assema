@@ -21,7 +21,7 @@ const Work = () => {
                     </h3>
                     </div>
                     <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Dalgakıran Kompresör's competent service staff use only genuine "SmartPARTS" spare 
+                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine  spare 
                     </p>
                 </div>
                 <div className={styles.card}>
@@ -32,7 +32,7 @@ const Work = () => {
                     </h3>
                     </div>
                     <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Dalgakıran Kompresör's competent service staff use only genuine "SmartPARTS" spare 
+                         original spare parts and lubricants. Al-assema competent service staff use only genuine  spare 
                     </p>
                 </div>
                 <div className={styles.card}>
@@ -43,7 +43,7 @@ const Work = () => {
                     </h3>
                     </div>
                     <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Dalgakıran Kompresör's competent service staff use only genuine "SmartPARTS" spare 
+                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine  spare 
                     </p>
                 </div>
                 <div className={styles.card}>
@@ -54,7 +54,7 @@ const Work = () => {
                     </h3>
                     </div>
                     <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Dalgakıran Kompresör's competent service staff use only genuine "SmartPARTS" spare 
+                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine  spare 
                     </p>
                 </div>
             </div>

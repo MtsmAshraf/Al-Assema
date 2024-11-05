@@ -25,7 +25,7 @@ const Services = () => {
                         Spare Parts
                     </h3>
                     <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Dalgakıran Kompresör's competent service staff use only genuine "SmartPARTS" spare parts with proven durability to ensure unrivalled reliability and long service life.
+                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine "SmartPARTS" spare parts with proven durability to ensure unrivalled reliability and long service life.
                     </p>
                 </Link>
                 <Link href={"/services"} className={styles.card}>

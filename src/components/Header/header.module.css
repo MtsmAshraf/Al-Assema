@@ -49,7 +49,7 @@
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .header .close.shown{
-    right: 150px;
+    right: 190px;
 }
 @media (max-width: 767px) {
     .header .bars{

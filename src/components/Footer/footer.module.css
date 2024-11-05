@@ -4,6 +4,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    border-top: 1px solid #ccc;
 }
 .footer .bgImg{
     position: absolute;

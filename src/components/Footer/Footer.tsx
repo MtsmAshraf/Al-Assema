@@ -20,7 +20,7 @@ const Footer = () => {
             </p>
             <SocialUl></SocialUl>
             <div className={styles.devFooter}>
-                by: <a href="https://moatasim-ashraf.netlify.app">Moatasim</a>
+                by: <a target='_blank' href="https://moatasim-ashraf.netlify.app">Moatasim</a>
             </div>
         </div>
     </footer>
