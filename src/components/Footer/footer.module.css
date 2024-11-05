@@ -18,7 +18,8 @@
 .footer .footerContainer{
     text-align: center;
     width: 400px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer .logo{
     display: flex;
