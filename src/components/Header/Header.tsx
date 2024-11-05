@@ -10,7 +10,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import VerticalNav from '../VerticalNav/VerticalNav'
 
-const Header = () => {
+const Header = ({
+    lo
+  }: {
+    lo: string
+  }) => {
     const [showVNav, setShowVNav] = useState(false)
   return (
     <header className={styles.header}>
@@ -18,14 +22,14 @@ const Header = () => {
             <Link className={styles.logo} href={"/"}>
                 <Image loading='lazy' src={logo} alt='Al Assema Logo'></Image>
             </Link>
-            <Nav></Nav>
+            <Nav lo={lo}></Nav>
             <button className={styles.bars} onClick={() => {setShowVNav(!showVNav)}}>
                 <FontAwesomeIcon icon={faBars} />
             </button>
             <button className={showVNav ? styles.close + " " + styles.shown : styles.close} onClick={() => {setShowVNav(!showVNav)}}>
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>
-            <VerticalNav shown={showVNav}></VerticalNav>
+            <VerticalNav lo={lo} shown={showVNav}></VerticalNav>
             <SocialUl></SocialUl>
         </div>
     </header>

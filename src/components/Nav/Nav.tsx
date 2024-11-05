@@ -3,7 +3,11 @@ import styles from "./nav.module.css"
 import Link from 'next/link'
 import LangSwitch from './LangSwitch/LangSwitch'
 
-const Nav = () => {
+const Nav = ({
+    lo
+}: {
+    lo: string
+}) => {
   return (
     <nav className={styles.nav}>
         <ul className={styles.links}>
@@ -17,7 +21,7 @@ const Nav = () => {
                 <Link href={'/about'}>About Us</Link>
             </li>
         </ul>
-        <LangSwitch></LangSwitch>
+        <LangSwitch lo={lo}></LangSwitch>
     </nav>
   )
 }

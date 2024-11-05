@@ -3,11 +3,17 @@ import styles from "./vertical-nav.module.css"
 import SocialUl from '../SocialUl/SocialUl'
 import Link from 'next/link'
 import LangSwitch from '../Nav/LangSwitch/LangSwitch'
-const VerticalNav = ({shown} : {shown: boolean}) => {
+const VerticalNav = ({
+    shown,
+    lo
+} : {
+    shown: boolean,
+    lo: string
+}) => {
   return (
     <div className={shown ? styles.verticalNav + " " + styles.shown : styles.verticalNav}>
         <h3>Language</h3>
-        <LangSwitch></LangSwitch>
+        <LangSwitch lo={lo}></LangSwitch>
         <h3>Pages</h3>
         <ul className={styles.links}>
             <li>
