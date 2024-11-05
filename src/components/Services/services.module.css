@@ -18,7 +18,7 @@
     border-radius: 6px;
     padding: 50px 20px 20px;
     box-shadow: var(--main-shadow);
-    height: fit-content;
+    /* height: fit-content; */
     transition: var(--main-transition);
 }
 .services .servicesCards .card span{
@@ -50,14 +50,17 @@
 .services .servicesCards .card p{
     font-size: 14px;
     max-height: 0;
+    max-height: 500px;
     overflow: hidden;
     color: var(--p-color);
     transition: var(--main-transition);
     transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-timing-function: linear;
 }
 .services .servicesCards .card:hover p{
     max-height: 500px;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 @media (max-width: 1200px) {
     .services .servicesCards{

@@ -23,16 +23,15 @@
     color: var(--text-color);
     background-color: var(--bg-color);
     border-radius: 6px;
-    box-shadow: var(--main-shadow);
     transition: var(--main-transition);
-    overflow: hidden;
-    border-radius: 6px;
 }
 .work .workCards .card div{
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
     position: relative;
+    border-radius: 6px;
+    box-shadow: var(--main-shadow);
 }
 .work .workCards .card div img{
     height: 100%;
@@ -50,7 +49,6 @@
 .work .workCards .card p{
     font-size: 14px;
     color: var(--p-color);
-    padding: 20px 20px;
+    padding: 20px 0px;
     text-align: center;
-    background-color: #ffeeff;
 }
