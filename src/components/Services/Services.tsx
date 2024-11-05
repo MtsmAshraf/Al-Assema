@@ -13,7 +13,7 @@ const Services = () => {
                     Al-Assema Compressor Services &amp; Parts
                 </h2>
                 <p>
-                    Al-Assema is represented throughout the world by a comprehensive services and support network of main offices and competent partners. Regardless of your compressor's make or age, our expert engineers will keep it in top shape and look after it with the same care they would Dalgakıran spare parts and equipment.
+                    Al-Assema is represented throughout the world by a comprehensive services and support network of main offices and competent partners. Regardless of your compresso&apos;s make or age, our expert engineers will keep it in top shape and look after it with the same care they would Dalgakıran spare parts and equipment.
                 </p>
             </MainHeading>
             <div className={styles.servicesCards}>
@@ -25,7 +25,7 @@ const Services = () => {
                         Spare Parts
                     </h3>
                     <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine "SmartPARTS" spare parts with proven durability to ensure unrivalled reliability and long service life.
+                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine SmartPARTS spare parts with proven durability to ensure unrivalled reliability and long service life.
                     </p>
                 </Link>
                 <Link href={"/services"} className={styles.card}>
