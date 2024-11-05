@@ -11,7 +11,8 @@ export type Product = {
     description: string,
     href: string,
     src: StaticImageData,
-    alt: string
+    alt: string,
+    category: string
 }
 
 const products : Product[] = [
@@ -21,7 +22,8 @@ const products : Product[] = [
         description: "Industrial automation product integrator - comprehensively meeting production needs",
         href: "/inverters",
         src: image1,
-        alt: "Inverters Image"
+        alt: "Inverters Image",
+        category: "category 2"
     },
     {
         id: "2",
@@ -29,7 +31,8 @@ const products : Product[] = [
         description: "Safty, stability and reliability",
         href: "/plcs",
         src: image2,
-        alt: "PLCs Image"
+        alt: "PLCs Image",
+        category: "category 1"
     },
     {
         id: "3",
@@ -37,7 +40,8 @@ const products : Product[] = [
         description: "High definition, high brightness, and full view display",
         href: "/hmis",
         src: image3,
-        alt: "HMIs Image"
+        alt: "HMIs Image",
+        category: "category 1"
     },
     {
         id: "4",
@@ -45,7 +49,8 @@ const products : Product[] = [
         description: "Efficiency, stability and intelligence",
         href: "/servo-drives",
         src: image4,
-        alt: "Servoes Image"
+        alt: "Servoes Image",
+        category: "category 2"
     },
     {
         id: "5",
@@ -53,7 +58,8 @@ const products : Product[] = [
         description: "Efficiency, stability and intelligence",
         href: "/servo-drives",
         src: image5,
-        alt: "Servoes Image"
+        alt: "Servoes Image",
+        category: "category 2"
     }
 ]
 

@@ -16,6 +16,7 @@
   --text-color: #000;
   --p-color: #424242;
   --main-transition: all 0.2s 0s linear;
+  --main-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 ::selection{
   background-color: var(--logo-color);
@@ -40,6 +41,14 @@ button, button:focus, button:focus-visible, button:active{
 }
 svg{
   /* position: relative; */
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--logo-color);
+  border-radius: 6px;
 }
 .container{
   margin-right: auto;
