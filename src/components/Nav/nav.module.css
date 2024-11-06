@@ -15,10 +15,21 @@
     border-left: 1px solid var(--text-color);
     padding: 0;
     padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 .nav .links a{
     text-decoration: none;
     color: var(--text-color);
+}
+.nav .links a.active{
+    color: var(--logo-color);
+    padding: 2px 10px;
+    background-color: var(--logo-color);
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: var(--main-shadow);
+    font-weight: normal;
 }
 .nav > :last-child{
     margin-left: 20px;

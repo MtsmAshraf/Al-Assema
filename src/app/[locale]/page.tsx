@@ -6,6 +6,7 @@ import Services from "@/components/Services/Services";
 import Work from "@/components/Work/Work";
 import Contact from "@/components/Contact/Contact";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import Loader from "@/components/Loader/Loader";
 
 export default function Home({
   params: {locale}
@@ -15,9 +16,9 @@ export default function Home({
 }) {
   return (
     <div className={styles.page}>
+      <Loader></Loader>
       <Hero></Hero>
       <About lo={locale}></About>
-      {/* <Loading></Loading> */}
       <Services lo={locale}></Services>
       <Products lo={locale}></Products>
       <Work lo={locale}></Work>

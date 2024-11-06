@@ -23,7 +23,7 @@
 .verticalNav h3{
     text-align: center;
     font-size: 16px;
-    margin-top: 14px;
+    margin-top: 30px;
 }
 .verticalNav .links{
     display: flex;
@@ -43,9 +43,15 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 14px;
+    transition: var(--main-transition);
+}
+.verticalNav .links a.active{
+    background-color: var(--logo-color);
+    color: #fff;
 }
 .verticalNav .links a:hover{
-    background-color: var(--main-color);
+    background-color: var(--logo-color);
+    color: #fff;
 }
 .verticalNav > :last-child{
     margin-right: 20px;

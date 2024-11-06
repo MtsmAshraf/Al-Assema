@@ -1,9 +1,19 @@
 {
     "Header": {
         "Nav": {
+            "Home": "Home",
             "Products": "Products",
             "Services": "Services",
             "AboutUs": "About Us"
+        },
+        "VerticalNav": {
+            "Home": "Home",
+            "Products": "Products",
+            "Services": "Services",
+            "AboutUs": "About Us",
+            "Language": "Language",
+            "Pages": "Pages",
+            "SocialMedia": "ScoialMedia"
         }
     },
     "Footer": {

@@ -1,9 +1,19 @@
 {
     "Header": {
         "Nav": {
+            "Home": "الرئيسية",
             "Products": "منتجاتنا",
             "Services": "خدماتنا",
             "AboutUs": "عنا"
+        },
+        "VerticalNav": {
+            "Home": "الرئيسية",
+            "Products": "منتجاتنا",
+            "Services": "خدماتنا",
+            "AboutUs": "عنا",
+            "Language": "اللغة",
+            "Pages": "الصفحات",
+            "SocialMedia": "التواصل الاجتماعي"
         }
     },
     "Footer": {

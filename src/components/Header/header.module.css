@@ -55,6 +55,11 @@
 .header .close.shown{
     right: 190px;
 }
+@media (max-width: 992px) {
+    .header > div{
+        width: 100%;
+    }
+}
 @media (max-width: 767px) {
     .header .bars{
         display: flex;
