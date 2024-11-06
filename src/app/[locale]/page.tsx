@@ -22,7 +22,7 @@ export default function Home({
       <Services lo={locale}></Services>
       <Products lo={locale}></Products>
       <Work lo={locale}></Work>
-      <Testimonials lo={locale}></Testimonials>
+      <Testimonials parentEl={"home"} lo={locale}></Testimonials>
       <Contact lo={locale}></Contact>
     </div>
   );

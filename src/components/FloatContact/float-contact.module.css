@@ -1,0 +1,81 @@
+.floatContact{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 20;
+    background-color: transparent;
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+}
+.floatContact:hover{
+    right: 150px;
+}
+.floatContact > svg{
+    font-size: 30px; 
+    aspect-ratio: 1;
+    /* width: 50px; */
+    background-color: var(--logo-color);
+    /* height: 50px; */
+    box-shadow: var(--main-shadow);
+    color: #fff;
+    border-radius: 50%;
+    padding: 14px;
+}
+.floatContact > div{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    padding: 0px 10px;
+    z-index: -1;
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.floatContact > div:first-of-type{
+    border-radius: 0px 6px 6px 0px;
+    transform: translateY(-50%) translateX(-50px);
+    left: 100%;
+}
+.floatContact > div:last-of-type{
+    border-radius: 6px 0px 0px 6px;
+    transform: translateY(-50%) translateX(50px);
+    right: 100%;
+    flex-direction: row-reverse;
+}
+.floatContact:hover > div{
+    transform: translateY(-50%) translateX(0px);
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+.floatContact > div span{
+    color: var(--logo-color);
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--main-shadow);
+    background-color: #fff;
+    border-radius: 50%;
+}
+.floatContact > div div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.floatContact > div div a{
+    flex: 1;
+    background-color: var(--logo-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px;
+    box-shadow: var(--main-shadow);
+    border-radius: 6px;
+    width: 80px;
+}

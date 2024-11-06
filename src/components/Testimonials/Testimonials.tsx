@@ -9,9 +9,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
 const Testimonials = ({
-        lo
+        lo,
+        parentEl
     }: {
-        lo: string
+        lo: string,
+        parentEl: string
     }) => {
   const t = useTranslations("HomePage")
   return (
@@ -38,7 +40,7 @@ const Testimonials = ({
                         nextEl: '.featured-swiper-button-next',
                         prevEl: '.featured-swiper-button-prev'
                     }}
-                    className='mySwiperProd'
+                    className={`mySwiperProd${parentEl}`}
                     autoHeight={true}
                     >
                     <SwiperSlide className={styles.SwiperSlide}>
