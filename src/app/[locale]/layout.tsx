@@ -6,10 +6,11 @@ import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
-
+import icon from "./favicon.ico"
 export const metadata: Metadata = {
   title: "Al Assema",
   description: "العاصمة لأنظمة الهواء المضغوط - Al Assema for Compressed Air Systems",
+  icons: icon.src,
 };
 
 export default async function RootLayout({
