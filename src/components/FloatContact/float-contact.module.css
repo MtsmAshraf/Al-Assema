@@ -10,6 +10,11 @@
 .floatContact:hover{
     right: 150px;
 }
+@media (max-width: 600px) {
+    .floatContact{
+        right: 20px;
+    }
+}
 .floatContact > svg{
     font-size: 30px; 
     aspect-ratio: 1;
