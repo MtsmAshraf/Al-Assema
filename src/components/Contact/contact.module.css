@@ -21,7 +21,7 @@
 .contact .info > div:not(.socialMedia) > div{
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .contact .info > div:not(.socialMedia) > div > div{
     display: flex;
@@ -49,8 +49,8 @@
 .contact .info > div:not(.socialMedia) > div > div a.iconLink{
     background-color: var(--logo-color);
     color: #fff;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,15 +117,22 @@
 }
 @media (max-width: 600px) {
     .contact .info > div h3{
+        font-size: 14px;
         text-align: center;
     }
     .contact .info > div:not(.socialMedia) > div{
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
+        font-size: 14px;
     }
     .contact .info > div:not(.socialMedia) > div > div:last-child{
         flex-direction: row-reverse;
+    }
+    .contact .info > div:not(.socialMedia) > div > div a.iconLink{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
     }
     .contact .info > div:not(.socialMedia) > div > div:last-child > div{
         align-items: flex-end;

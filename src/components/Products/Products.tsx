@@ -20,7 +20,7 @@ const Products = ({
                   {t("Products.MainHeading.P")}
                 </p>
             </MainHeading>
-        <ProductsGrid></ProductsGrid>
+        <ProductsGrid lo={lo}></ProductsGrid>
         </div>
     </section>
   )

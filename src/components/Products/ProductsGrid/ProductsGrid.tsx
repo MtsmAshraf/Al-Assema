@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from "./products-grid.module.css"
 import ProductCards from './ProductCards/ProductCards'
-const ProductsGrid = () => {
+const ProductsGrid = ({
+    lo
+}: {
+    lo: string
+}) => {
   return (
-    <section className={styles.productsGrid}>
+    <section className={lo === "ar" ? styles.productsGrid + " " + styles.ar : styles.productsGrid}>
         <div className={styles.filter}>
             <div>
                 <label htmlFor="all">All</label>

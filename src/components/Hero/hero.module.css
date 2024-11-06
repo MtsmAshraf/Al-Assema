@@ -1,5 +1,6 @@
 .hero{
     min-height: 100vh;
+    z-index: 8;
 }
 .hero .img img{
     width: 100vw;
