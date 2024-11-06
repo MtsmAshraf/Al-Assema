@@ -4,6 +4,7 @@
     font-size: 12px;
     border-radius: 6px;
     box-shadow: var(--main-shadow);
+    direction: ltr !important;
 }
 .langSwitch span{
     padding: 3px 10px;

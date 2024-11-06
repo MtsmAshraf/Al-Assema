@@ -5,9 +5,15 @@ import bgLogo from "../../../public/imgs/favicon.ico"
 import styles from "./footer.module.css"
 import SocialUl from '../SocialUl/SocialUl'
 import Link from 'next/link'
-const Footer = () => {
+import { useTranslations } from 'next-intl'
+const Footer = ({
+    lo
+}: {
+    lo: string
+}) => {
+    const t = useTranslations("Footer")
   return (
-    <footer className={styles.footer}>
+    <footer className={lo === "ar" ? styles.footer + " " + styles.ar : styles.footer}>
         <div className={styles.bgImg}>
             <Image src={bgLogo} alt='logo bg'></Image>
         </div>
@@ -16,11 +22,13 @@ const Footer = () => {
                 <Image src={logo} alt='Al-Assema Logo'></Image>
             </Link>
             <p>
-                &copy; Al-Assema for Compressed Air Systems
+                &copy; {t("P")}
             </p>
             <SocialUl></SocialUl>
             <div className={styles.devFooter}>
-                by: <a target='_blank' href="https://moatasim-ashraf.netlify.app">Moatasim</a>
+                by: <a target='_blank' href="https://moatasim-ashraf.netlify.app">
+                    {t("DevFooter")}
+                </a>
             </div>
         </div>
     </footer>

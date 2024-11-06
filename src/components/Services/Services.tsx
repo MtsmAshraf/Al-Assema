@@ -4,16 +4,22 @@ import MainHeading from '../MainHeading/MainHeading'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChalkboardUser, faHeadset, faScrewdriverWrench, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-const Services = () => {
+import { useTranslations } from 'next-intl'
+const Services = ({
+    lo
+}: {
+    lo: string
+}) => {
+    const t = useTranslations("HomePage")
   return (
-    <section className={styles.services}>
+    <section className={lo === "ar" ? styles.services + " " + styles.ar : styles.services}>
         <div className="container">
             <MainHeading>
                 <h2>
-                    Al-Assema Compressor Services &amp; Parts
+                    {t('Services.MainHeading.H2')}
                 </h2>
                 <p>
-                    Al-Assema is represented throughout the world by a comprehensive services and support network of main offices and competent partners. Regardless of your compresso&apos;s make or age, our expert engineers will keep it in top shape and look after it with the same care they would Dalgakıran spare parts and equipment.
+                    {t('Services.MainHeading.P')}
                 </p>
             </MainHeading>
             <div className={styles.servicesCards}>

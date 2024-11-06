@@ -7,6 +7,10 @@
     border-bottom: 1px solid #eee;
     z-index: 4;
 }
+.header.ar{
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+}
 .header > div{
     display: flex;
     align-items: center;

@@ -6,6 +6,9 @@
     overflow: hidden;
     border-top: 1px solid #ccc;
 }
+.footer.ar{
+    font-family: "Tajawal", sans-serif;
+}
 .footer .bgImg{
     position: absolute;
     filter: grayscale(100%);

@@ -7,11 +7,19 @@ import Image from 'next/image'
 import test from "../../../public/imgs/user.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-const Testimonials = () => {
+import { useTranslations } from 'next-intl'
+const Testimonials = ({
+        lo
+    }: {
+        lo: string
+    }) => {
+  const t = useTranslations("HomePage")
   return (
-    <section className={styles.testimonials}>
+    <section className={lo === "ar" ? styles.testimonials + " " + styles.ar : styles.testimonials}>
         <div className="container">
-            <h2>What Our Clients Say</h2>
+            <h2>
+                {t("Testimonials.MainHeading.H2")}
+            </h2>
             <div className={styles.swiper}>
                 <Swiper
                     loop

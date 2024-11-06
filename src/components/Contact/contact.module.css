@@ -3,6 +3,9 @@
     padding-top: 50px;
     padding-bottom: 100px;
 }
+.contact.ar{
+    font-family: "Tajawal", sans-serif;
+}
 .contact h1{
     text-align: center;
     font-size: 40px;
@@ -92,9 +95,16 @@
     text-align: center;
     margin-top: 10px;
 }
+.contact.ar .location .address{
+    direction: rtl;
+}
 .contact .location .address svg{
     font-size: 20px;
     margin-right: 5px;
+}
+.contact.ar .location .address svg{
+    margin-right: 0px;
+    margin-left: 5px;
 }
 @media (max-width: 992px) {
     .contact > div{

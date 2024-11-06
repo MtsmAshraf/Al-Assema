@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from "./main-btn.module.css"
 const MainBtn = ({
-    children
+    children,
+    lo
 } : {
-    children: React.ReactNode
+    children: React.ReactNode,
+    lo: string
 }) => {
   return (
-    <button className={styles.mainBtn}>
+    <button className={lo === "ar" ? styles.mainBtn + " " + styles.ar : styles.mainBtn}>
         {children}
     </button>
   )

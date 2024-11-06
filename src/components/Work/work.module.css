@@ -3,6 +3,10 @@
     padding-bottom: 100px;
     background-color: #ffeeff;
 }
+.work.ar{
+    font-family: "Tajawal", sans-serif;
+    direction: rtl;
+}
 .work .workCards{
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));

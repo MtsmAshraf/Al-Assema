@@ -5,24 +5,38 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
-const About = () => {
+import Image from 'next/image'
+import logo from "../../../public/imgs/logo-removebg.png"
+const About = ({
+    lo
+}: {
+    lo: string
+}) => {
     const t = useTranslations('HomePage');
+    const tBtn = useTranslations('MainBtn');
   return (
-    <section className={styles.about}>
+    <section className={lo === "ar"? styles.about + " " + styles.ar: styles.about}>
         <div className="container">
-            <div className={styles.aboutHeading}>
-                <h2>{t("about.heading")}</h2>
-                <p>{t("about.span")}</p>
+            <div className={styles.text}>
+                <div className={styles.aboutHeading}>
+                    <h2>{t("About.Heading")}</h2>
+                    <p>{t("About.Span")}</p>
+                </div>
+                <p className={styles.aboutDetails}>
+                    {t("About.P")}
+                </p>
+                <MainBtn lo={lo}>
+                    <Link href={"/about"}>
+                        <span>
+                            {tBtn("More")}
+                        </span>
+                        <FontAwesomeIcon icon={faChevronRight} />
+                    </Link>
+                </MainBtn>
             </div>
-            <p className={styles.aboutDetails}>Dalgakıran Kompresör is Turkey&apos;s global brand that produces industrial compressors and compressed air systems. Our products ensure that our customers achieve sustainable productivity in a wide range of markets including general engineering, manufacturing and process industries, construction, automotive, pharmaceutical, food and many more. Founded by Ömer Dalgakıran in Istanbul in 1965, Dalgakıran Kompresör is Turkey&apos;s largest industrial compressor manufacturer and exporter. Dalgakıran Kompresör, which exports to more than 130 countries today, meets the oil-injected and oil-free compressed air needs of many different sectors with high efficiency with its rotary screw compressor, reciprocating compressor and scroll compressor models.</p>
-            <MainBtn>
-                <Link href={"/about"}>
-                    <span>
-                        More
-                    </span>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                </Link>
-            </MainBtn>
+            <div className={styles.logo}>
+                <Image src={logo} alt='Al-Assema logo'></Image>
+            </div>
         </div>
     </section>
   )

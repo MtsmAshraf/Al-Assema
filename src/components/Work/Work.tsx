@@ -3,13 +3,19 @@ import MainHeading from '../MainHeading/MainHeading'
 import styles from "./work.module.css"
 import Image from 'next/image'
 import test from "../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
-const Work = () => {
+import { useTranslations } from 'next-intl'
+const Work = ({
+    lo
+}: {
+    lo: string
+}) => {
+  const t = useTranslations("HomePage")
   return (
-    <section className={styles.work}>
+    <section className={lo === "ar" ? styles.work + " " + styles.ar : styles.work}>
         <div className="container">
             <MainHeading>
                 <h2>
-                    Al-Assema Work
+                    {t("Work.MainHeading.H2")}
                 </h2>
             </MainHeading>
             <div className={styles.workCards}>
