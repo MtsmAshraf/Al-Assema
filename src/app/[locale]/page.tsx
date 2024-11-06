@@ -17,6 +17,7 @@ export default function Home({
     <div className={styles.page}>
       <Hero></Hero>
       <About lo={locale}></About>
+      {/* <Loading></Loading> */}
       <Services lo={locale}></Services>
       <Products lo={locale}></Products>
       <Work lo={locale}></Work>

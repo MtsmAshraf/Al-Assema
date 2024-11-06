@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./nav.module.css"
-import Link from 'next/link'
 import LangSwitch from './LangSwitch/LangSwitch'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 
 const Nav = ({
     lo

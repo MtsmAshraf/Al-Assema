@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react'
 import styles from "./header.module.css"
-import Link from 'next/link'
 import Image from 'next/image'
 import logo from "../../../public/imgs/logo-removebg.png"
 import Nav from '../Nav/Nav'
@@ -9,6 +8,7 @@ import SocialUl from '../SocialUl/SocialUl'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import VerticalNav from '../VerticalNav/VerticalNav'
+import { Link } from '@/i18n/routing'
 
 const Header = ({
     lo

@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./vertical-nav.module.css"
 import SocialUl from '../SocialUl/SocialUl'
-import Link from 'next/link'
 import LangSwitch from '../Nav/LangSwitch/LangSwitch'
+import { Link } from '@/i18n/routing'
 const VerticalNav = ({
     shown,
     lo

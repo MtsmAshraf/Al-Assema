@@ -2,8 +2,8 @@ import React from 'react'
 import styles from "./products-cards.module.css"
 import ProductCard from './ProductCard/ProductCard'
 import allProducts, { Product } from "../allProducts"
-import Link from 'next/link'
 import Image from 'next/image'
+import { Link } from '@/i18n/routing'
 const ProductCards = () => {
   return (
     <div className={styles.productCards}>
