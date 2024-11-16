@@ -4,7 +4,7 @@ import MainHeading from '../MainHeading/MainHeading'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeadset, faScrewdriverWrench, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 const Services = ({
     lo
 }: {
