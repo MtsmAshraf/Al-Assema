@@ -9,7 +9,7 @@
 }
 .services .servicesCards{
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 60px 20px;
     margin-top: 80px;
 }
@@ -20,10 +20,11 @@
     text-align: center;
     background-color: var(--bg-color);
     border-radius: 6px;
-    padding: 50px 20px 20px;
+    padding: 50px 0px 20px;
     box-shadow: var(--main-shadow);
     /* height: fit-content; */
     transition: var(--main-transition);
+    height: fit-content;
 }
 .services .servicesCards .card span{
     transition: var(--main-transition);
@@ -51,20 +52,25 @@
     text-transform: uppercase;
     margin-bottom: 6px;
 }
-.services .servicesCards .card p{
-    font-size: 14px;
-    max-height: 0;
-    max-height: 500px;
-    overflow: hidden;
-    color: var(--p-color);
-    transition: var(--main-transition);
-    transition-duration: 0.4s;
-    transition-timing-function: linear;
+.services .servicesCards .card ul{
+    margin-top: 20px;
 }
-.services .servicesCards .card:hover p{
-    max-height: 500px;
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.services .servicesCards .card ul li{
+    padding: 10px 20px;
+    transition: var(--main-transition);
+    max-height: 0;
+    max-height: 300px;
+    overflow: hidden;
+}
+.services .servicesCards .card:hover ul li{
+    max-height: 300px;
+}
+.services .servicesCards .card ul li:hover{
+    background-color: var(--logo-color);
+    color: #fff;
+}
+.services .servicesCards .card ul li:not(:first-child){
+    border-top: 1px solid #ccc;
 }
 @media (max-width: 1200px) {
     .services .servicesCards{

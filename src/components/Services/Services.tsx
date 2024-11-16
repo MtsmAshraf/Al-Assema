@@ -2,9 +2,9 @@ import React from 'react'
 import styles from "./services.module.css"
 import MainHeading from '../MainHeading/MainHeading'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChalkboardUser, faHeadset, faScrewdriverWrench, faUserCheck } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+import { faHeadset, faScrewdriverWrench, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 const Services = ({
     lo
 }: {
@@ -25,48 +25,93 @@ const Services = ({
             <div className={styles.servicesCards}>
                 <Link href={"/services"} className={styles.card}>
                     <span>
-                    <FontAwesomeIcon icon={faScrewdriverWrench} />
-                    </span>
-                    <h3>
-                        Spare Parts
-                    </h3>
-                    <p>
-                        The only way to get trouble-free and long-term use of the compressor is to use only original spare parts and lubricants. Al-assema competent service staff use only genuine SmartPARTS spare parts with proven durability to ensure unrivalled reliability and long service life.
-                    </p>
-                </Link>
-                <Link href={"/services"} className={styles.card}>
-                    <span>
                         <FontAwesomeIcon icon={faHeadset} />
                     </span>
                     <h3>
-                        Service & Support
+                        {t('Services.Cards.Headings.1')}
                     </h3>
-                    <p>
-                        Al-Assemaxpert servicing team experienced in compressors and spare parts delivers a servicing service 24 hours a day, 365 days a year in Türkiye and the 130+ countries we export to providing our business partners in every industry with non-stop compressed air solutions.
-                    </p>
+                    <ul>
+                    <li>
+                            {t('Services.Cards.Uls.1.0')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.1.1')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.1.2')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.1.3')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.1.4')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.1.5')}
+                        </li>
+                    </ul>
+                </Link>
+                <Link href={"/services"} className={styles.card}>
+                    <span>
+                    <FontAwesomeIcon icon={faScrewdriverWrench} />
+                    </span>
+                    <h3>
+                        {t('Services.Cards.Headings.0')}
+                    </h3>
+                    <ul>
+                        <li>
+                            {t('Services.Cards.Uls.0.0')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.0.1')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.0.2')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.0.3')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.0.4')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.0.5')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.0.6')}
+                        </li>
+                    </ul>
                 </Link>
                 <Link href={"/services"} className={styles.card}>
                     <span>
                         <FontAwesomeIcon icon={faUserCheck} />
                     </span>
                     <h3>
-                        Customer Experience
+                        {t('Services.Cards.Headings.2')}
                     </h3>
-                    <p>
-                        Al-Assema customer experience team of professionals are just a call or email away to help you find exactly what you need. This service allows us to respond to your requests and queries on time and track issue resolution
-                    </p>
+                    <ul>
+                    <li>
+                            {t('Services.Cards.Uls.2.0')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.2.1')}
+                        </li>
+                        <li>
+                            {t('Services.Cards.Uls.2.2')}
+                        </li>
+                    </ul>
                 </Link>
-                <Link href={"/services"} className={styles.card}>
+                {/* <Link href={"/services"} className={styles.card}>
                     <span>
                         <FontAwesomeIcon icon={faChalkboardUser} />
                     </span>
                     <h3>
                         Training
                     </h3>
-                    <p>
-                        Al-Assema support engineers offer effective and world-class air compressor and compressed air equipment training programs to operation and maintenance teams. Naturally prepared and tailored precisely to your individual requirements. Training takes place at our facility, with qualified service partners or directly on-site for you on request.
-                    </p>
-                </Link>
+                                    <ul>
+                                    <li>
+                                    </li></ul>
+</Link> */}
             </div>
         </div>
     </section>
