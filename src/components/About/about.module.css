@@ -40,6 +40,25 @@
 .about.ar .aboutDetails{
     font-size: 16px;
 }
+.about ul{
+    margin-bottom: 16px;
+    list-style: disc !important;
+}
+.about ul li{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: var(--p-color);
+    line-height: 1.6;
+    font-size: 14px;
+}
+.about ul li::marker {
+    color: var(--logo-color);
+}
+.about.ar ul li{
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
 .about .logo{
     display: flex;
     align-items: center;

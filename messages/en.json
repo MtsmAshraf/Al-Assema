@@ -17,7 +17,7 @@
         }
     },
     "Footer": {
-        "P": "Al-Assema for Compressed Air Systems",
+        "P": "Al-Asema for Compressed Air Systems 2024",
         "DevFooter": "Moatasim"
     },
     "MainBtn": {
@@ -25,25 +25,32 @@
     },
     "HomePage": {
         "About": {
-            "Heading": "Al-Assema",
+            "Heading": "Al-Asema",
             "Span": "for Compressed Air Systems",
-            "P": "Al-Assema global brand that produces industrial compressors and compressed air systems. Our products ensure that our customers achieve sustainable productivity in a wide range of markets including general engineering, manufacturing and process industries, construction, automotive, pharmaceutical, food and many more. Founded by Ömer Dalgakıran in Istanbul in 1965, Dalgakıran Kompresör is Turkey's largest industrial compressor manufacturer and exporter. Dalgakıran Kompresör, which exports to more than 130 countries today, meets the oil-injected and oil-free compressed air needs of many different sectors with high efficiency with its rotary screw compressor, reciprocating compressor and scroll compressor models."
+            "P": "Al Asema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
+            "Ul": {
+                "0": "Maintenance and overhauls for all types of screw compressors, along with comprehensive maintenance contracts.",
+                "1": "Supply of spare parts for all air compressors available in the Egyptian market.",
+                "2": "Authorized distributors for SOTRAS and MANN Filter, providing all types of filters and separator components for equipment.",
+                "3": "We have a distinguished team of engineers and technicians who have received top-level training and have extensive experience working with major brands.",
+                "4": "We offer imported screw air compressors for all applications."
+            }
         },
         "Services": {
             "MainHeading": {
-                "H2": "Al-Assema Compressor Services & Parts",
-                "P": "Al-Assema is represented throughout the world by a comprehensive services and support network of main offices and competent partners. Regardless of your compresso's make or age, our expert engineers will keep it in top shape and look after it with the same care they would Dalgakıran spare parts and equipment."
+                "H2": "Al-Asema Compressor Services & Parts",
+                "P": "Al-Asema is represented throughout the world by a comprehensive services and support network of main offices and competent partners. Regardless of your compresso's make or age, our expert engineers will keep it in top shape and look after it with the same care they would Dalgakıran spare parts and equipment."
             }
         },
         "Products": {
             "MainHeading": {
-                "H2": "Al-Assema Compressor Products",
+                "H2": "Al-Asema Compressor Products",
                 "P": "Our products guarantee customers achieve sustainable productivity in a wide range of markets, including general engineering, manufacturing and process industries, construction, automotive, pharmaceutical, food and much more."
             }
         },
         "Work": {
             "MainHeading": {
-                "H2": "Al-Assema Projects"
+                "H2": "Al-Asema Projects"
             }
         },
         "Testimonials": {

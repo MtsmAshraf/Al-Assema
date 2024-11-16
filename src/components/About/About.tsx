@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from "./about.module.css"
 import MainBtn from '../MainBtn/MainBtn'
-import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import logo from "../../../public/imgs/logo-removebg.png"
+import { Link } from '@/i18n/routing'
 const About = ({
     lo
 }: {
@@ -25,6 +25,23 @@ const About = ({
                 <p className={styles.aboutDetails}>
                     {t("About.P")}
                 </p>
+                <ul>
+                    <li>
+                        {t("About.Ul.0")}
+                    </li>
+                    <li>
+                        {t("About.Ul.1")}
+                    </li>
+                    <li>
+                        {t("About.Ul.2")}
+                    </li>
+                    <li>
+                        {t("About.Ul.3")}
+                    </li>
+                    <li>
+                        {t("About.Ul.4")}
+                    </li>
+                </ul>
                 <MainBtn lo={lo}>
                     <Link href={"/about"}>
                         <span>
