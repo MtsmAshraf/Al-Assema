@@ -9,8 +9,8 @@ import { getMessages } from "next-intl/server";
 import icon from "./favicon.ico"
 import FloatContact from "@/components/FloatContact/FloatContact";
 export const metadata: Metadata = {
-  title: "Al Assema",
-  description: "العاصمة لأنظمة الهواء المضغوط - Al Assema for Compressed Air Systems",
+  title: "Al Asema",
+  description: "العاصمة لأنظمة الهواء المضغوط - Al Asema for Compressed Air Systems",
   icons: icon.src,
 };
 

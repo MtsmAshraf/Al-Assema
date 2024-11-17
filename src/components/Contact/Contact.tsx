@@ -31,8 +31,8 @@ const Contact = ({
                       <span>
                           {t('Contact.Contacts.Sales')}
                       </span>  
-                      <a target='_blank' href="tel:00201096953160">
-                        +01096953160
+                      <a target='_blank' href="tel:00201000220174">
+                        +201000220174
                       </a>
                     </div>
                   </div>  
@@ -44,8 +44,8 @@ const Contact = ({
                       <span>
                         {t('Contact.Contacts.Services')}
                       </span>  
-                      <a target='_blank' href="tel:00201096953160">
-                        +201024994652
+                      <a target='_blank' href="tel:00201017047579">
+                        +01017047579
                       </a>
                     </div>
                   </div>  
@@ -77,8 +77,8 @@ const Contact = ({
                       <span>
                         {t('Contact.Contacts.Services')}
                       </span>  
-                      <a target='_blank' href="https://wa.me/201096953160">
-                        +201024994652
+                      <a target='_blank' href="https://wa.me/201017047579">
+                        +201017047579
                       </a>
                     </div>
                   </div>  
@@ -106,7 +106,7 @@ const Contact = ({
             <h2>
               {t('Contact.Location.Heading')}
             </h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3444.995925965771!2d31.744161075307264!3d30.29417760669564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDE3JzM5LjAiTiAzMcKwNDQnNDguMyJF!5e0!3m2!1sen!2seg!4v1730810598411!5m2!1sen!2seg" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d414.3288295725461!2d31.744258204099847!3d30.30087004400621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDE4JzAyLjciTiAzMcKwNDQnMzkuNiJF!5e0!3m2!1sen!2seg!4v1731843692990!5m2!1sen!2seg" 
               allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             <div className={styles.address}>
               <address>

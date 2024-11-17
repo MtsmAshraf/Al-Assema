@@ -66,6 +66,7 @@
 }
 .services .servicesCards .card ul{
     margin-top: 20px;
+    font-size: 14px;
 }
 .services .servicesCards .card:hover{
     background-color: var(--logo-color);
