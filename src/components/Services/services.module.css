@@ -44,9 +44,21 @@
     box-shadow: var(--main-shadow);
     /* padding: 16px; */
 }
+.services .servicesCards .card > span > svg{
+    width: 70%;
+}
+.services .servicesCards .card:last-child > span > svg{
+    width: 100%;
+}
+.services .servicesCards .card > span > svg path{
+    transition: var(--main-transition);
+    fill: var(--logo-color) !important;
+}
 .services .servicesCards .card:hover span{
     background-color: var(--logo-color);
-    color: #fff;
+}
+.services .servicesCards .card:hover > span > svg path{
+    fill: #fff !important;
 }
 .services .servicesCards .card h3{
     text-transform: uppercase;
@@ -61,6 +73,7 @@
     max-height: 0;
     max-height: 300px;
     overflow: hidden;
+    border-bottom: 1px solid #ccc;
 }
 .services .servicesCards .card:hover ul li{
     max-height: 300px;
@@ -70,7 +83,46 @@
     color: #fff;
 }
 .services .servicesCards .card ul li:not(:first-child){
-    border-top: 1px solid #ccc;
+}
+.services .servicesCards .card .cardMore{
+    border: 1px solid var(--logo-color);
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    transition: var(--main-transition);
+}
+.services.ar .servicesCards .card .cardMore{
+    font-family: "Tajawal", sans-serif !important; 
+    direction: rtl;
+}
+.services .servicesCards .card .cardMore{
+    color: var(--text-color);
+    transition: var(--main-transition);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.services .servicesCards .card .cardMore h4{
+    font-weight: normal;
+}
+.services .servicesCards .card .cardMore svg{
+    font-size: 12px;
+}
+.services.ar .servicesCards .card .cardMore svg{
+    transform: rotateZ(180deg);
+}
+.services .servicesCards .card .cardMore:hover{
+    background-color: var(--logo-color);
+}
+.services .servicesCards .card .cardMore:hover{
+    color: #fff;
+    gap: 10px;
 }
 @media (max-width: 1200px) {
     .services .servicesCards{

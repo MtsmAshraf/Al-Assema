@@ -39,7 +39,7 @@
         "Services": {
             "MainHeading": {
                 "H2": "Al-Asema Compressor Services & Parts",
-                "P": "The services provided by Al-Asema Company in the fields of screw compressors, pneumatics, air conditioning, and refrigeration."
+                "P": "The services provided by Al-Asema Company in the fields of screw compressors, pneumatics, air conditioning and refrigeration."
             },
             "Cards":{
                 "Headings": {
@@ -70,7 +70,8 @@
                         "1": "صيانة جميع الشيلرات الموجودة في السوق المصري عن طريق فريق من المهندسين والفنيين المختصين في مجال التبريد والتكييف",
                         "2": "صيانة وتوريد مجففات الهواء صيانة وتوريد أبراج التبريد وغرف التبريد المختلفة"
                     }
-                }
+                },
+                "More": "More"
             }
         },
         "Products": {
