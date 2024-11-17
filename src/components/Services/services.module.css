@@ -50,14 +50,14 @@
 .services .servicesCards .card:last-child > span > svg{
     width: 100%;
 }
-.services .servicesCards .card > span > svg path{
+.services .servicesCards .card > span > svg *{
     transition: var(--main-transition);
     fill: var(--logo-color) !important;
 }
 .services .servicesCards .card:hover span{
     background-color: var(--logo-color);
 }
-.services .servicesCards .card:hover > span > svg path{
+.services .servicesCards .card:hover > span > svg *{
     fill: #fff !important;
 }
 .services .servicesCards .card h3{
@@ -66,6 +66,10 @@
 }
 .services .servicesCards .card ul{
     margin-top: 20px;
+}
+.services .servicesCards .card:hover{
+    background-color: var(--logo-color);
+    color: #fff;
 }
 .services .servicesCards .card ul li{
     padding: 10px 20px;
@@ -79,8 +83,8 @@
     max-height: 300px;
 }
 .services .servicesCards .card ul li:hover{
-    background-color: var(--logo-color);
-    color: #fff;
+    /* background-color: var(--logo-color);
+    color: #fff; */
 }
 .services .servicesCards .card ul li:not(:first-child){
 }
@@ -108,6 +112,10 @@
     margin-left: auto;
     margin-top: 20px;
 }
+.services .servicesCards .card:hover .cardMore{
+    background-color: #fff;
+    color: var(--logo-color);
+}
 .services .servicesCards .card .cardMore h4{
     font-weight: normal;
 }
@@ -118,11 +126,11 @@
     transform: rotateZ(180deg);
 }
 .services .servicesCards .card .cardMore:hover{
-    background-color: var(--logo-color);
+    /* background-color: var(--logo-color); */
 }
 .services .servicesCards .card .cardMore:hover{
-    color: #fff;
-    gap: 10px;
+    /* color: #fff; */
+    gap: 20px;
 }
 @media (max-width: 1200px) {
     .services .servicesCards{
@@ -137,8 +145,8 @@
         height: unset;
     }
     .services .servicesCards .card span{
-        background-color: var(--logo-color);
-        color: #fff;
+        /* background-color: var(--logo-color); */
+        /* color: #fff; */
     }
     .services .servicesCards .card p{
         max-height: 500px;

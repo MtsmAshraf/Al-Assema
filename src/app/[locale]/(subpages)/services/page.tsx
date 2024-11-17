@@ -1,5 +1,5 @@
 import React from 'react'
-// import styles from "./services.module.css"
+import styles from "./services.module.css"
 import Services from '@/components/Services/Services'
 import Contact from '@/components/Contact/Contact'
 import Testimonials from '@/components/Testimonials/Testimonials'
@@ -9,7 +9,7 @@ const ServicesPage = ({
   params: { locale: string }
 }) => {
   return (
-    <section>
+    <section className={styles.services}>
       <Services lo={locale}></Services>
       <Testimonials parentEl={"services"} lo={locale}></Testimonials>
       <Contact lo={locale}></Contact>

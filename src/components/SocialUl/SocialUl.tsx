@@ -7,22 +7,22 @@ const SocialUl = () => {
   return (
     <ul className={styles.socialUl}>
         <li>
-            <a title="Facebook" href="https://facebook.com">
+            <a title="Facebook" target='_blank' href="https://www.facebook.com/assimacompressors">
                 <FontAwesomeIcon icon={faFacebookF}/>
             </a>
         </li>
         <li>
-            <a title="Linkedin" href="https://linkedin.com">
+            <a title="Linkedin" target='_blank' href="https://linkedin.com">
                 <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
         </li>
         <li>
-            <a title="Whatsapp" href="https://facebook.com">
+            <a title="Whatsapp" target='_blank' href="https://wa.me/201096953160">
                 <FontAwesomeIcon icon={faWhatsapp}/>
             </a>
         </li>
         <li>
-            <a title="Gmail" href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
+            <a title="Gmail" target='_blank' href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
                 <FontAwesomeIcon icon={faEnvelope}/>
             </a>
         </li>

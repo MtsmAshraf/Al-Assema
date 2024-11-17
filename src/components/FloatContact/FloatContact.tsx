@@ -12,8 +12,8 @@ const FloatContact = () => {
                 <FontAwesomeIcon icon={faWhatsapp} />
             </span>
             <div>
-                <a href="https://wa.me/201096953160">Services</a>
-                <a href="https://wa.me/201096953160">Sales</a>
+                <a target='_blank' href="https://wa.me/201096953160">Services</a>
+                <a target='_blank' href="https://wa.me/201096953160">Sales</a>
             </div>
         </div>
         <div>
@@ -21,8 +21,8 @@ const FloatContact = () => {
                 <FontAwesomeIcon icon={faPhone} />
             </span>
             <div>
-                <a href="tel:00201096953160">Services</a>
-                <a href="tel:00201096953160">Sales</a>
+                <a target='_blank' href="tel:00201096953160">Services</a>
+                <a target='_blank' href="tel:00201096953160">Sales</a>
             </div>
         </div>
     </button>
