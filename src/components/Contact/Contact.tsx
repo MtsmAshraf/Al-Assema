@@ -31,8 +31,8 @@ const Contact = ({
                       <span>
                           {t('Contact.Contacts.Sales')}
                       </span>  
-                      <a href="/">
-                        +201024994652
+                      <a href="tel:00201096953160">
+                        +01096953160
                       </a>
                     </div>
                   </div>  
@@ -44,7 +44,7 @@ const Contact = ({
                       <span>
                         {t('Contact.Contacts.Services')}
                       </span>  
-                      <a href="/">
+                      <a href="tel:00201096953160">
                         +201024994652
                       </a>
                     </div>
@@ -64,8 +64,8 @@ const Contact = ({
                       <span>
                           {t('Contact.Contacts.Sales')}
                         </span>  
-                      <a href="/">
-                        +201024994652
+                      <a href="https://wa.me/201096953160">
+                        +01096953160
                       </a>
                     </div>
                   </div>  
@@ -77,7 +77,7 @@ const Contact = ({
                       <span>
                         {t('Contact.Contacts.Services')}
                       </span>  
-                      <a href="/">
+                      <a href="https://wa.me/201096953160">
                         +201024994652
                       </a>
                     </div>
@@ -94,8 +94,8 @@ const Contact = ({
                       <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                     <div>
-                      <a href="/">
-                        alalssema@example.com
+                      <a href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
+                        assemaforcompressor@gmail.com
                       </a>
                     </div>
                   </div>  

@@ -22,7 +22,7 @@ const SocialUl = () => {
             </a>
         </li>
         <li>
-            <a title="Gmail" href="https://facebook.com">
+            <a title="Gmail" href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
                 <FontAwesomeIcon icon={faEnvelope}/>
             </a>
         </li>
