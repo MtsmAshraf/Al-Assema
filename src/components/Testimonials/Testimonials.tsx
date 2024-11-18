@@ -8,6 +8,9 @@ import test from "../../../public/imgs/user.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
+import 'swiper/css';
+import 'swiper/css/navigation'; // If using navigation module
+import 'swiper/css/pagination'; // If using pagination module
 const Testimonials = ({
         lo,
         parentEl
@@ -32,13 +35,12 @@ const Testimonials = ({
                     spaceBetween={80}
                     pagination={{
                         clickable: true,
-                        el: ".pagination"
+                        el: `.pagination${parentEl}`
                     }}
-                    modules={[Navigation, Pagination, Autoplay, EffectCards]}
-                    effect='CoverFlow'
+                    modules={[Navigation, Pagination, Autoplay]}
                     navigation={{
-                        nextEl: '.featured-swiper-button-next',
-                        prevEl: '.featured-swiper-button-prev'
+                        nextEl: `.featured-swiper-button-next${parentEl}`,
+                        prevEl: `.featured-swiper-button-prev${parentEl}`
                     }}
                     className={`mySwiperProd${parentEl}`}
                     autoHeight={true}
@@ -73,13 +75,13 @@ const Testimonials = ({
                     </SwiperSlide>
                 </Swiper>
                 <div className={styles.pagination}>
-                    <div className='pagination'></div>
+                    <div className={`pagination${parentEl}`}></div>
                 </div>
                 <div className={styles.btns}>
-                    <button className='featured-swiper-button-prev'>
+                    <button className={`featured-swiper-button-prev${parentEl}`}>
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
-                    <button className='featured-swiper-button-next'>
+                    <button className={`featured-swiper-button-next${parentEl}`}>
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>

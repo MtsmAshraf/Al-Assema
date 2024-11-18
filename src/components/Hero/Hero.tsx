@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./hero.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay, EffectCards, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import "swiper/css/bundle";
 import Image from 'next/image';
 import test from "../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
@@ -23,13 +23,12 @@ const Hero = () => {
                 pagination={{
                     clickable: true
                 }}
-                modules={[Navigation, Pagination, Autoplay, EffectCards]}
-                effect='CoverFlow'
+                modules={[Navigation, Pagination, Autoplay]}
                 navigation={{
                     nextEl: '.featured-swiper-button-next',
                     prevEl: '.featured-swiper-button-prev'
                 }}
-                className='mySwiperProd'
+                className='mySwiperProdHero'
                 autoHeight={true}
                 >
                 <SwiperSlide>
