@@ -16,7 +16,7 @@
     align-items: center;
     position: relative;
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .testimonials .swiper .btns{
     position: absolute;

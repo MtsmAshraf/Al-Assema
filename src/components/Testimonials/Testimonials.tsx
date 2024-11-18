@@ -35,12 +35,12 @@ const Testimonials = ({
                     spaceBetween={80}
                     pagination={{
                         clickable: true,
-                        el: `.pagination${parentEl}`
+                        el: `.pagination`
                     }}
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation={{
-                        nextEl: `.featured-swiper-button-next${parentEl}`,
-                        prevEl: `.featured-swiper-button-prev${parentEl}`
+                        nextEl: `.featured-swiper-button-next`,
+                        prevEl: `.featured-swiper-button-prev`
                     }}
                     className={`mySwiperProd${parentEl}`}
                     autoHeight={true}
@@ -75,13 +75,13 @@ const Testimonials = ({
                     </SwiperSlide>
                 </Swiper>
                 <div className={styles.pagination}>
-                    <div className={`pagination${parentEl}`}></div>
+                    <div className={`pagination`}></div>
                 </div>
                 <div className={styles.btns}>
-                    <button className={`featured-swiper-button-prev${parentEl}`}>
+                    <button className={`featured-swiper-button-prev`}>
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
-                    <button className={`featured-swiper-button-next${parentEl}`}>
+                    <button className={`featured-swiper-button-next`}>
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>

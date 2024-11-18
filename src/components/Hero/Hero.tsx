@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import "swiper/css/bundle";
+import 'swiper/css/navigation'; 
+import 'swiper/css/pagination'; 
 import Image from 'next/image';
 import test from "../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,7 +23,8 @@ const Hero = () => {
                 slidesPerView= {1}
                 spaceBetween={10}
                 pagination={{
-                    clickable: true
+                    clickable: true,
+                    el: `.heroPagination`
                 }}
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation={{
@@ -52,12 +55,15 @@ const Hero = () => {
                         </div>
                     </SwiperSlide>
             </Swiper>
-                    <button className='featured-swiper-button-prev'>
-                        <FontAwesomeIcon icon={faChevronLeft} />
-                    </button>
-                    <button className='featured-swiper-button-next'>
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </button>
+            <div className={styles.heroPagination}>
+                <div className={`heroPagination`}></div>
+            </div>
+            <button className='featured-swiper-button-prev'>
+                <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button className='featured-swiper-button-next'>
+                <FontAwesomeIcon icon={faChevronRight} />
+            </button>
         </div>
     </section>
   )

@@ -28,6 +28,16 @@
 .hero .swiper button:last-of-type{
     right: 0;
 }
+.hero .heroPagination{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.hero .heroPagination span{
+    background-color: var(--logo-color);
+}
 @media (max-width: 767px) {
     .hero .swiper button{
         width: 30px;
