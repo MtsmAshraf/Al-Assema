@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Autoplay, EffectCards, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import styles from "./testimonials.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Image from 'next/image'
