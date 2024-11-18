@@ -31,7 +31,7 @@ const Contact = ({
                       <span>
                           {t('Contact.Contacts.Sales')}
                       </span>  
-                      <a target='_blank' href="tel:00201000220174">
+                      <a target='_blank' href="tel:+201000220174">
                         +201000220174
                       </a>
                     </div>
@@ -44,7 +44,7 @@ const Contact = ({
                       <span>
                         {t('Contact.Contacts.Services')}
                       </span>  
-                      <a target='_blank' href="tel:00201017047579">
+                      <a target='_blank' href="tel:+201017047579">
                         +01017047579
                       </a>
                     </div>

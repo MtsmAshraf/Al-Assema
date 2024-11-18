@@ -21,8 +21,8 @@ const FloatContact = () => {
                 <FontAwesomeIcon icon={faPhone} />
             </span>
             <div>
-                <a target='_blank' href="tel:00201017047579">Services</a>
-                <a target='_blank' href="tel:00201000220174">Sales</a>
+                <a target='_blank' href="tel:+201017047579">Services</a>
+                <a target='_blank' href="tel:+201000220174">Sales</a>
             </div>
         </div>
     </button>
