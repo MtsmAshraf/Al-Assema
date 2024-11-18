@@ -64,6 +64,7 @@
     box-shadow: var(--main-shadow);
     background-color: #fff;
     border-radius: 50%;
+    border: 1px solid var(--logo-color);
 }
 .floatContact > div div{
     display: flex;

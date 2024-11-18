@@ -12,7 +12,7 @@ const SocialUl = () => {
             </a>
         </li>
         <li>
-            <a title="Linkedin" target='_blank' href="https://linkedin.com">
+            <a title="Linkedin" target='_blank' href="https://www.linkedin.com/in/al-assema-compressor-52aba6227/">
                 <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
         </li>
