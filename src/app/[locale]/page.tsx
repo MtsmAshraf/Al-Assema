@@ -3,9 +3,9 @@ import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
 import Products from "@/components/Products/Products";
 import Services from "@/components/Services/Services";
-import Work from "@/components/Work/Work";
 import Contact from "@/components/Contact/Contact";
-import Testimonials from "@/components/Testimonials/Testimonials";
+// import Work from "@/components/Work/Work";
+// import Testimonials from "@/components/Testimonials/Testimonials";
 import Loader from "@/components/Loader/Loader";
 
 export default function Home({
@@ -17,12 +17,12 @@ export default function Home({
   return (
     <div className={styles.page}>
       <Loader></Loader>
-      <Hero></Hero>
+      <Hero lo={locale}></Hero>
       <About lo={locale}></About>
       <Services lo={locale}></Services>
       <Products lo={locale}></Products>
-      <Work lo={locale}></Work>
-      <Testimonials parentEl={"home"} lo={locale}></Testimonials>
+      {/* <Work lo={locale}></Work>
+      <Testimonials parentEl={"home"} lo={locale}></Testimonials> */}
       <Contact lo={locale}></Contact>
     </div>
   );

@@ -13,10 +13,14 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import logo from "../../../public/imgs/logojpg.jpg"
 import sliderProducts from './sliderProducts';
 import { useTranslations } from 'next-intl';
-const Hero = () => {
+const Hero = ({
+    lo
+}: {
+    lo: string,
+}) => {
     const t = useTranslations("HomePage.Hero")
   return (
-    <section className={styles.hero}>
+    <section className={lo === "en" ? styles.hero + " " + styles.en : styles.hero}>
         <div className={styles.swiper}>
             <Swiper
                 loop

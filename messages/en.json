@@ -17,7 +17,7 @@
         }
     },
     "Footer": {
-        "P": "Al-Asema for Compressed Air Systems 2024",
+        "P": "Al-Assema for Compressed Air Systems 2024",
         "DevFooter": "Moatasim"
     },
     "MainBtn": {
@@ -25,7 +25,7 @@
     },
     "HomePage": {
         "Hero":{
-            "0": "Al-Asema for Compressed Air Systems",
+            "0": "Al-Assema for Compressed Air Systems",
             "1": "Imported compressors with various capacities",
             "2": "Imported compressors with various capacities",
             "3": "New air dryers, Chicago brand, from the Atlas Copco group",
@@ -33,9 +33,9 @@
             "5": "Line filters of all sizes, Italian and Chinese"
         },
         "About": {
-            "Heading": "Al-Asema",
+            "Heading": "Al-Assema",
             "Span": "for Compressed Air Systems",
-            "P": "Al Asema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
+            "P": "Al Assema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
             "Ul": {
                 "0": "Maintenance and overhauls for all types of screw compressors, along with comprehensive maintenance contracts.",
                 "1": "Supply of spare parts for all air compressors available in the Egyptian market.",
@@ -46,8 +46,8 @@
         },
         "Services": {
             "MainHeading": {
-                "H2": "Al-Asema Compressor Services & Parts",
-                "P": "The services provided by Al-Asema Company in the fields of screw compressors, pneumatics, air conditioning and refrigeration."
+                "H2": "Al-Assema Compressor Services & Parts",
+                "P": "The services provided by Al-Assema Company in the fields of screw compressors, pneumatics, air conditioning and refrigeration."
             },
             "Cards":{
                 "Headings": {
@@ -84,7 +84,7 @@
         },
         "Products": {
             "MainHeading": {
-                "H2": "Al-Asema Compressor Products",
+                "H2": "Al-Assema Compressor Products",
                 "P": "Our products guarantee customers achieve sustainable productivity in a wide range of markets, including general engineering, manufacturing and process industries, construction, automotive, pharmaceutical, food and much more."
             },
             "ProductsCards": {
@@ -101,7 +101,7 @@
         },
         "Work": {
             "MainHeading": {
-                "H2": "Al-Asema Projects"
+                "H2": "Al-Assema Projects"
             }
         },
         "Testimonials": {

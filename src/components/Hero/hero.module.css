@@ -42,6 +42,10 @@
     padding: 20px;
     font-size: 30px;
 }
+.hero.en .swiper p{
+    font-family: "Poppins", sans-serif;
+    direction: ltr;
+}
 .hero .swiper button{
     /* position: absolute; */
     position: absolute;
