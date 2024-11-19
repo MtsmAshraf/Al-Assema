@@ -2,13 +2,45 @@
     min-height: 100vh;
     z-index: 8;
 }
+.hero .img{
+    padding-bottom: 60px;
+    position: relative;
+}
+.hero .img::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -67px;
+    height: calc(100dvh - 67px);
+    width: 100%;
+    background-color: black;
+    background-color: var(--logo-color);
+    opacity: 0.2;
+}
 .hero .img img{
     width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    height: calc(100dvh - 120px);
+    object-fit: contain;
 }
 .hero .swiper{
     position: relative;
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+    height: 100dvh;
+}
+.hero .swiper p{
+    background-color: var(--logo-color);
+    /* background-image: var(--main-gradient); */
+    position: absolute;
+    width: calc(100% + 20px);
+    left: -10px;
+    bottom: 0;
+    color: #fff;
+    font-family: "Tajawal", sans-serif;
+    direction: rtl;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
 }
 .hero .swiper button{
     /* position: absolute; */
@@ -17,10 +49,14 @@
     transform: translateY(-50%);
     z-index: 3;
     font-size: 30px;
-    height: 100vh;
     width: 70px;
+    height: 70px;
+    border-radius: 50%;
     background-color: #00000051;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero .swiper button:first-of-type{
     left: 0;
@@ -30,7 +66,7 @@
 }
 .hero .heroPagination{
     position: absolute;
-    bottom: 30px;
+    top: 85px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -38,9 +74,20 @@
 .hero .heroPagination span{
     background-color: var(--logo-color);
 }
-@media (max-width: 767px) {
-    .hero .swiper button{
-        width: 30px;
+@media (max-width: 992px) {
+    .hero .swiper p{
         font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .hero .img{
+    }
+    .hero .img img{
+        object-fit: cover;
+    }
+    .hero .swiper button{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
     }
 }

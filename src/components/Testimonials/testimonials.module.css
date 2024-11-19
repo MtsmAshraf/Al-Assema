@@ -47,7 +47,7 @@
 }
 .testimonials .swiper .SwiperSlide{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     gap: 20px;
     max-width: 100%;

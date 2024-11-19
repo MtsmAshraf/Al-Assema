@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./vertical-nav.module.css"
 import SocialUl from '../SocialUl/SocialUl'
 import LangSwitch from '../Nav/LangSwitch/LangSwitch'
@@ -14,6 +14,7 @@ const VerticalNav = ({
 }) => {
     const pathname = usePathname()
     const t = useTranslations("Header")
+   
     return (
     <div className={shown ? styles.verticalNav + " " + styles.shown : styles.verticalNav}>
         <h3>{t("VerticalNav.Language")}</h3>

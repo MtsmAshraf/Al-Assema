@@ -8,9 +8,16 @@ import "swiper/css/bundle";
 import 'swiper/css/navigation'; 
 import 'swiper/css/pagination'; 
 import Image from 'next/image';
-import test from "../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+import image1 from "../../../public/imgs/yellow-one.jpeg"
+import image2 from "../../../public/imgs/yellow-two.jpeg"
+import image3 from "../../../public/imgs/red-slider.jpeg"
+import image4 from "../../../public/imgs/black-slider.jpeg"
+import image5 from "../../../public/imgs/blue-slider.jpeg"
+
+import sliderProducts from './sliderProducts';
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -18,7 +25,7 @@ const Hero = () => {
             <Swiper
                 loop
                 autoplay={{
-                    delay: 3000
+                    delay: 5000
                 }}
                 slidesPerView= {1}
                 spaceBetween={10}
@@ -34,26 +41,20 @@ const Hero = () => {
                 className='mySwiperProdHero'
                 autoHeight={true}
                 >
-                <SwiperSlide>
-                    <div className={styles.img}>
-                        <Image src={test} alt='test'></Image>
-                    </div>
-                </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={styles.img}>
-                            <Image src={test} alt='test'></Image>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={styles.img}>
-                            <Image src={test} alt='test'></Image>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={styles.img}>
-                            <Image src={test} alt='test'></Image>
-                        </div>
-                    </SwiperSlide>
+                {
+                    sliderProducts.map((product) => {
+                        return(
+                            <SwiperSlide key={product.id}>
+                                <div className={styles.img}>
+                                    <Image src={product.src} alt={`${product.name} image`}></Image>
+                                </div>
+                                <p>
+                                    {product.name}
+                                </p>
+                            </SwiperSlide>
+                        )
+                    })
+                }
             </Swiper>
             <div className={styles.heroPagination}>
                 <div className={`heroPagination`}></div>

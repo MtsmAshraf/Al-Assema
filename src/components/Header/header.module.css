@@ -5,7 +5,7 @@
     top: 0;
     background-color: var(--header-bg);
     border-bottom: 1px solid #eee;
-    z-index: 4;
+    z-index: 14;
 }
 .header.ar{
     direction: rtl;
@@ -50,7 +50,7 @@
     border-radius: 6px 0px 0px 6px;
     border: 1px solid var(--logo-color);
     transition: var(--main-transition);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .header .close.shown{
     right: 190px;

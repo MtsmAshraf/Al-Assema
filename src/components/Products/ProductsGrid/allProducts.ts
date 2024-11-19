@@ -1,64 +1,73 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
-import image2 from "../../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
-import image3 from "../../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
-import image4 from "../../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
-import image5 from "../../../../public/imgs/lucas-gallone-uPk5aOtimUE-unsplash.jpg"
-
+import image1 from "../../../../public/imgs/yellow-one.jpeg"
+import image2 from "../../../../public/imgs/yellow-two.jpeg"
+import image3 from "../../../../public/imgs/red.jpeg"
+import image4 from "../../../../public/imgs/black.jpeg"
+import image5 from "../../../../public/imgs/blue.jpeg"
+import image6 from "../../../../public/imgs/1.jpeg"
+import image7 from "../../../../public/imgs/2.jpeg"
+import image8 from "../../../../public/imgs/3.jpeg"
+import image9 from "../../../../public/imgs/4.jpeg"
 export type Product = {
     id: string,
     name: string,
-    description: string,
-    href: string,
     src: StaticImageData,
-    alt: string,
     category: string
 }
 
 const products : Product[] = [
     {
         id: "1",
-        name: "Oil Injected Rotary Screw Compressors",
-        description: "Industrial automation product integrator - comprehensively meeting production needs",
-        href: "/inverters",
+        name: "كمبرسورات استيراد بمختلف القدرات",
         src: image1,
-        alt: "Inverters Image",
         category: "category 2"
     },
     {
         id: "2",
-        name: "Oil Injected Rotary Screw Compressors",
-        description: "Safty, stability and reliability",
-        href: "/plcs",
+        name: "كمبرسورات استيراد بمختلف القدرات",
         src: image2,
-        alt: "PLCs Image",
         category: "category 1"
     },
     {
         id: "3",
-        name: "Oil Injected Rotary Screw Compressors",
-        description: "High definition, high brightness, and full view display",
-        href: "/hmis",
+        name: "مجففات هواء جديدة ماركة Chicago من مجموعة Atlas copco",
         src: image3,
-        alt: "HMIs Image",
         category: "category 1"
     },
     {
         id: "4",
-        name: "Oil Injected Rotary Screw Compressors",
-        description: "Efficiency, stability and intelligence",
-        href: "/servo-drives",
+        name: "بوستر 40 بار من Chicago",
         src: image4,
-        alt: "Servoes Image",
         category: "category 2"
     },
     {
         id: "5",
-        name: "Oil Injected Rotary Screw Compressors",
-        description: "Efficiency, stability and intelligence",
-        href: "/servo-drives",
+        name: "فلاتر خط جميع المقاسات إيطالى وصينى",
         src: image5,
-        alt: "Servoes Image",
+        category: "category 2"
+    },
+    {
+        id: "6",
+        name: "فواصل زيت Noitech",
+        src: image6,
+        category: "category 2"
+    },
+    {
+        id: "7",
+        name: "فلاتر هواء Noitech , Man filter",
+        src: image7,
+        category: "category 2"
+    },
+    {
+        id: "8",
+        name: "فلاتر زيت Mann filter , Noitech",
+        src: image8,
+        category: "category 2"
+    },
+    {
+        id: "9",
+        name: "فواصل زيت spinning on",
+        src: image9,
         category: "category 2"
     }
 ]

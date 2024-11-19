@@ -1,8 +1,8 @@
 .floatContact{
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 50px;
-    z-index: 7;
+    z-index: 17;
     background-color: transparent;
     transition: var(--main-transition);
     transition-timing-function: ease-in-out;

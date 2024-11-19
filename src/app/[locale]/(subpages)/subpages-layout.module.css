@@ -1,6 +1,6 @@
 .hero{
     margin-top: 80px;
-    background-image: linear-gradient(to right, var(--logo-color) 50%, var(--main-color));
+    background-image: var(--main-gradient);
     height: 200px;
     display: flex;
     align-items: center;
