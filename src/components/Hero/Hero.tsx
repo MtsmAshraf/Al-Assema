@@ -10,9 +10,11 @@ import 'swiper/css/pagination';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
+import logo from "../../../public/imgs/logojpg.jpg"
 import sliderProducts from './sliderProducts';
+import { useTranslations } from 'next-intl';
 const Hero = () => {
+    const t = useTranslations("HomePage.Hero")
   return (
     <section className={styles.hero}>
         <div className={styles.swiper}>
@@ -35,15 +37,23 @@ const Hero = () => {
                 className='mySwiperProdHero'
                 autoHeight={true}
                 >
+                <SwiperSlide className={styles.first}>
+                    <div className={styles.img}>
+                        <Image src={logo} alt={`Al-assema for compressed air systems logo`}></Image>
+                    </div>
+                    <p>
+                        {t("0")}
+                    </p>
+                </SwiperSlide>
                 {
                     sliderProducts.map((product) => {
                         return(
                             <SwiperSlide key={product.id}>
                                 <div className={styles.img}>
-                                    <Image src={product.src} alt={`${product.name} image`}></Image>
+                                    <Image src={product.src} alt={`${t(`${product.id}`)} image`}></Image>
                                 </div>
                                 <p>
-                                    {product.name}
+                                    {t(`${product.id}`)}
                                 </p>
                             </SwiperSlide>
                         )

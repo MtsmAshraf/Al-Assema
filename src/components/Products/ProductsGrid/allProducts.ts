@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 import image1 from "../../../../public/imgs/yellow-one.jpeg"
-import image2 from "../../../../public/imgs/yellow-two.jpeg"
+// import image2 from "../../../../public/imgs/yellow-two.jpeg"
 import image3 from "../../../../public/imgs/red.jpeg"
 import image4 from "../../../../public/imgs/black.jpeg"
 import image5 from "../../../../public/imgs/blue.jpeg"
@@ -22,12 +22,12 @@ const products : Product[] = [
         src: image1,
         category: "category 2"
     },
-    {
-        id: "2",
-        name: "كمبرسورات استيراد بمختلف القدرات",
-        src: image2,
-        category: "category 1"
-    },
+    // {
+    //     id: "2",
+    //     name: "كمبرسورات استيراد بمختلف القدرات",
+    //     src: image2,
+    //     category: "category 1"
+    // },
     {
         id: "3",
         name: "مجففات هواء جديدة ماركة Chicago من مجموعة Atlas copco",

@@ -30,7 +30,7 @@
 }
 .hero .swiper p{
     background-color: var(--logo-color);
-    /* background-image: var(--main-gradient); */
+    background-image: var(--main-gradient);
     position: absolute;
     width: calc(100% + 20px);
     left: -10px;
@@ -81,13 +81,37 @@
 }
 @media (max-width: 767px) {
     .hero .img{
+        overflow: hidden;
     }
     .hero .img img{
-        object-fit: cover;
+    }
+    .hero .swiper .img img{
+        object-fit: contain;
+        transform: scaleX(1.5) scaleY(1.5);
+        /* height: auto; */
+    }
+    .hero .swiper .first .img{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .hero .swiper .first .img img{
+        transform: scaleX(1) scaleY(1);
+        /* padding-right: 40px;
+        padding-left: 40px; */
+    }
+    .hero .img::before{
+        /* transform: scaleX(25) scaleY(2 5); */
+        z-index: 12;
     }
     .hero .swiper button{
         font-size: 20px;
         width: 40px;
         height: 40px;
+    }
+    .hero .swiper button:first-of-type{
+        left: 10px;
+    }
+    .hero .swiper button:last-of-type{
+        right: 10px;
     }
 }

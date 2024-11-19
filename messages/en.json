@@ -24,6 +24,14 @@
         "More": "More"
     },
     "HomePage": {
+        "Hero":{
+            "0": "Al-Asema for Compressed Air Systems",
+            "1": "Imported compressors with various capacities",
+            "2": "Imported compressors with various capacities",
+            "3": "New air dryers, Chicago brand, from the Atlas Copco group",
+            "4": "40-bar booster from Chicago",
+            "5": "Line filters of all sizes, Italian and Chinese"
+        },
         "About": {
             "Heading": "Al-Asema",
             "Span": "for Compressed Air Systems",
@@ -78,6 +86,17 @@
             "MainHeading": {
                 "H2": "Al-Asema Compressor Products",
                 "P": "Our products guarantee customers achieve sustainable productivity in a wide range of markets, including general engineering, manufacturing and process industries, construction, automotive, pharmaceutical, food and much more."
+            },
+            "ProductsCards": {
+                "1": "Imported compressors with various capacities",
+                "2": "Imported compressors with various capacities",
+                "3": "New air dryers, Chicago brand, from the Atlas Copco group",
+                "4": "40-bar booster from Chicago",
+                "5": "Line filters of all sizes, Italian and Chinese",
+                "6": "Oil separators, Noitech",
+                "7": "Air filters, Noitech and Mann filter",
+                "8": "Oil filters, Noitech and Mann filter",
+                "9": "Spinning on oil separators"
             }
         },
         "Work": {
