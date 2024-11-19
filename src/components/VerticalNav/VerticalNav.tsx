@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./vertical-nav.module.css"
 import SocialUl from '../SocialUl/SocialUl'
 import LangSwitch from '../Nav/LangSwitch/LangSwitch'

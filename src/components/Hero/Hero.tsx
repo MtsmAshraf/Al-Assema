@@ -11,12 +11,6 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-import image1 from "../../../public/imgs/yellow-one.jpeg"
-import image2 from "../../../public/imgs/yellow-two.jpeg"
-import image3 from "../../../public/imgs/red-slider.jpeg"
-import image4 from "../../../public/imgs/black-slider.jpeg"
-import image5 from "../../../public/imgs/blue-slider.jpeg"
-
 import sliderProducts from './sliderProducts';
 const Hero = () => {
   return (
