@@ -17,6 +17,7 @@
     z-index: -1;
     display: none;
 }
+
 .floatContact .overlay.shown{
     display: block;
 }
