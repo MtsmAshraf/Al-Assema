@@ -17,28 +17,30 @@ const FloatContact = () => {
         }, 3000);
     }, [])
   return (
-    <button className={active ? styles.floatContact + " " + styles.active : styles.floatContact}>
-        <span onClick={() => {setActive(false)}} className={active ? styles.overlay + " " + styles.shown : styles.overlay}></span>
-        <FontAwesomeIcon icon={faInfo} />
-        <div>
-            <span>
-                <FontAwesomeIcon icon={faWhatsapp} />
-            </span>
-            <div>
-                <a target='_blank' href="https://wa.me/201017047579">Services</a>
-                <a target='_blank' href="https://wa.me/201096953160">Sales</a>
-            </div>
+        <div className={styles.parent}>
+            <span onClick={() => {setActive(false)}} className={active ? styles.overlay + " " + styles.shown : styles.overlay}></span>
+            <button className={active ? styles.floatContact + " " + styles.active : styles.floatContact}>
+                <FontAwesomeIcon icon={faInfo} />
+                <div>
+                    <span>
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                    </span>
+                    <div>
+                        <a target='_blank' href="https://wa.me/201017047579">Services</a>
+                        <a target='_blank' href="https://wa.me/201096953160">Sales</a>
+                    </div>
+                </div>
+                <div>
+                    <span>
+                        <FontAwesomeIcon icon={faPhone} />
+                    </span>
+                    <div>
+                        <a target='_blank' href="tel:+201017047579">Services</a>
+                        <a target='_blank' href="tel:+201000220174">Sales</a>
+                    </div>
+                </div>
+            </button>
         </div>
-        <div>
-            <span>
-                <FontAwesomeIcon icon={faPhone} />
-            </span>
-            <div>
-                <a target='_blank' href="tel:+201017047579">Services</a>
-                <a target='_blank' href="tel:+201000220174">Sales</a>
-            </div>
-        </div>
-    </button>
   )
 }
 

@@ -8,17 +8,18 @@
     transition-timing-function: ease-in-out;
     transition-delay: 0.4s;
 }
-.floatContact .overlay{
+.overlay{
     position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     display: none;
 }
 
-.floatContact .overlay.shown{
+.parent:has(.floatContact:hover) .overlay,
+.overlay.shown{
     display: block;
 }
 .floatContact.active,
