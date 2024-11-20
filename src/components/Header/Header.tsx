@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import VerticalNav from '../VerticalNav/VerticalNav'
 import { Link } from '@/i18n/routing'
+import LangSwitch from '../Nav/LangSwitch/LangSwitch'
 
 const Header = ({
     lo
@@ -23,9 +24,12 @@ const Header = ({
                 <Image loading='lazy' src={logo} alt='Al Assema Logo'></Image>
             </Link>
             <Nav lo={lo}></Nav>
-            <button className={styles.bars} onClick={() => {setShowVNav(!showVNav)}}>
-                <FontAwesomeIcon icon={faBars} />
-            </button>
+            <div>
+              <LangSwitch lo={lo}></LangSwitch>
+              <button className={styles.bars} onClick={() => {setShowVNav(!showVNav)}}>
+                  <FontAwesomeIcon icon={faBars} />
+              </button>
+            </div>
             <button className={showVNav ? styles.close + " " + styles.shown : styles.close} onClick={() => {setShowVNav(!showVNav)}}>
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>

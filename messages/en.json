@@ -17,7 +17,8 @@
         }
     },
     "Footer": {
-        "P": "Al-Assema for Compressed Air Systems 2024",
+        "P": "2024 Al-Assema",
+        "P2": "for Compressed Air Systems", 
         "DevFooter": "Moatasim"
     },
     "MainBtn": {

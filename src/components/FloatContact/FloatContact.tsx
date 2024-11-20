@@ -14,7 +14,7 @@ const FloatContact = () => {
             setInterval(() => {
                 setActive(false)
             }, 30000);
-        }, 5000);
+        }, 3000);
     }, [])
   return (
     <button className={active ? styles.floatContact + " " + styles.active : styles.floatContact}>

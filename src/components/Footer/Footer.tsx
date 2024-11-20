@@ -23,6 +23,8 @@ const Footer = ({
             </Link>
             <p>
                 &copy; {t("P")}
+                <br />
+                {t("P2")}
             </p>
             <SocialUl></SocialUl>
             <div className={styles.devFooter}>
