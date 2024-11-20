@@ -13,8 +13,7 @@ const Services = ({
     const t = useTranslations("HomePage")
   return (
     <section className={lo === "ar" ? styles.services + " " + styles.ar : styles.services}>
-
-
+        
         <div className="container">
             <MainHeading>
                 <h2>
