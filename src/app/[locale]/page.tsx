@@ -1,3 +1,4 @@
+"use client"
 import About from "@/components/About/About";
 import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
@@ -7,6 +8,7 @@ import Contact from "@/components/Contact/Contact";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
 import Loader from "@/components/Loader/Loader";
+import { useEffect } from "react";
 
 export default function Home({
   params: {locale}
@@ -14,6 +16,20 @@ export default function Home({
   params: {locale: string}
 
 }) {
+  
+  useEffect(() => {
+    const sections = document.querySelectorAll("section")
+    sections.forEach((section) => {
+      window.addEventListener("scroll", () => {
+        if(window.scrollY >= section.offsetTop - 400){
+          section.style.cssText = `
+            opacity: 1;
+            transform: translateY(0)
+          `
+        }
+      })
+    })
+  },[])
   return (
     <div className={styles.page}>
       <Loader></Loader>
