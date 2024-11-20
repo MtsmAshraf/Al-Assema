@@ -8,13 +8,16 @@
     transition-timing-function: ease-in-out;
     transition-delay: 0.4s;
 }
+.floatContact *{
+    pointer-events: none;
+}
 .overlay{
     position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     display: none;
 }
 
@@ -26,6 +29,10 @@
 .floatContact:hover{
     right: 150px;
     transition-delay: 0s;
+}
+.floatContact.active *,
+.floatContact:hover *{
+    pointer-events: unset;
 }
 .floatContact > svg{
     font-size: 30px; 
