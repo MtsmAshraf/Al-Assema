@@ -1,11 +1,23 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import styles from "./float-contact.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 const FloatContact = () => {
+    const [active, setActive] = useState(false)
+    useEffect(() => {
+        setInterval(() => {
+            setActive(true)
+        }, 30000);
+        setTimeout(() => {
+            setInterval(() => {
+                setActive(false)
+            }, 30000);
+        }, 5000);
+    }, [])
   return (
-    <button className={styles.floatContact}>
+    <button className={active ? styles.floatContact + " " + styles.active : styles.floatContact}>
         <FontAwesomeIcon icon={faInfo} />
         <div>
             <span>
