@@ -8,7 +8,7 @@ const ProductsGrid = ({
 }) => {
   return (
     <section className={lo === "ar" ? styles.productsGrid + " " + styles.ar : styles.productsGrid}>
-        <div className={styles.filter}>
+        {/* <div className={styles.filter}>
             <div>
                 <label htmlFor="all">All</label>
                 <input defaultChecked type="radio" id='all' name='grid-filter'/>
@@ -21,7 +21,7 @@ const ProductsGrid = ({
                 <label htmlFor="cat2">category 2</label>
                 <input type="radio" id='cat2' name='grid-filter'/>
             </div>
-        </div>
+        </div> */}
         <ProductCards></ProductCards>
     </section>
   )

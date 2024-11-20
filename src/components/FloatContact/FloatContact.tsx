@@ -9,11 +9,11 @@ const FloatContact = () => {
     useEffect(() => {
         setInterval(() => {
             setActive(true)
-        }, 30000);
+        }, 60000);
         setTimeout(() => {
             setInterval(() => {
                 setActive(false)
-            }, 30000);
+            }, 60000);
         }, 3000);
     }, [])
   return (
