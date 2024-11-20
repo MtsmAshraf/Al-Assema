@@ -24,7 +24,7 @@ const Header = ({
                 <Image loading='lazy' src={logo} alt='Al Assema Logo'></Image>
             </Link>
             <Nav lo={lo}></Nav>
-            <div>
+            <div className={styles.smCtrl}>
               <LangSwitch lo={lo}></LangSwitch>
               <button className={styles.bars} onClick={() => {setShowVNav(!showVNav)}}>
                   <FontAwesomeIcon icon={faBars} />
