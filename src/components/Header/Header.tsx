@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./header.module.css"
 import Image from 'next/image'
 import logo from "../../../public/imgs/logo-removebg.webp"
@@ -10,6 +10,7 @@ import { faArrowRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import VerticalNav from '../VerticalNav/VerticalNav'
 import { Link } from '@/i18n/routing'
 import LangSwitch from '../Nav/LangSwitch/LangSwitch'
+import { usePathname } from 'next/navigation'
 
 const Header = ({
     lo
@@ -17,6 +18,11 @@ const Header = ({
     lo: string
   }) => {
     const [showVNav, setShowVNav] = useState(false)
+    const pathname = usePathname()
+    useEffect(() => {
+      setShowVNav(false)
+      console.log("false")
+    },[pathname])
   return (
     <header className={lo === "ar" ? styles.header + " " + styles.ar : styles.header}>
         <div className="container">
