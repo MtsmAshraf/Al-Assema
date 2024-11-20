@@ -18,6 +18,7 @@ const FloatContact = () => {
     }, [])
   return (
     <button className={active ? styles.floatContact + " " + styles.active : styles.floatContact}>
+        <span onClick={() => {setActive(false)}} className={active ? styles.overlay + " " + styles.shown : styles.overlay}></span>
         <FontAwesomeIcon icon={faInfo} />
         <div>
             <span>
