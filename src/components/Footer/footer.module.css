@@ -5,6 +5,8 @@
     isolation: isolate;
     overflow: hidden;
     border-top: 1px solid #ccc;
+    text-wrap: wrap;
+    text-align: center;
 }
 .footer.ar{
     font-family: "Tajawal", sans-serif;
