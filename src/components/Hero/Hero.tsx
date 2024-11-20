@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import logo from "../../../public/imgs/logojpg.jpg"
+import logo from "../../../public/imgs/logojpg.webp"
 import sliderProducts from './sliderProducts';
 import { useTranslations } from 'next-intl';
 const Hero = ({

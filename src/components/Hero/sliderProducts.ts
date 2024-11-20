@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../../public/imgs/yellow-one-slider.jpeg"
-import image2 from "../../../public/imgs/yellow-two-slider.jpeg"
-import image3 from "../../../public/imgs/red-slider.jpeg"
-import image4 from "../../../public/imgs/black-slider.jpeg"
-import image5 from "../../../public/imgs/blue-slider.jpeg"
+import image1 from "../../../public/imgs/yellow-one-slider.webp"
+import image2 from "../../../public/imgs/yellow-two-slider.webp"
+import image3 from "../../../public/imgs/red-slider.webp"
+import image4 from "../../../public/imgs/black-slider.webp"
+import image5 from "../../../public/imgs/blue-slider.webp"
 export type SliderProduct = {
     id: string,
     name: string,

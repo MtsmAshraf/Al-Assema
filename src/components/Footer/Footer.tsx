@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from "../../../public/imgs/logo-removebg.png"
+import logo from "../../../public/imgs/logo-removebg.webp"
 import bgLogo from "../../../public/imgs/favicon.ico"
 import styles from "./footer.module.css"
 import SocialUl from '../SocialUl/SocialUl'

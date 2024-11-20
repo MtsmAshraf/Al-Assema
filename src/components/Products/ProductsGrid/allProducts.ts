@@ -1,13 +1,13 @@
 import { StaticImageData } from "next/image"
-import image1 from "../../../../public/imgs/yellow-one.jpeg"
-// import image2 from "../../../../public/imgs/yellow-two.jpeg"
-import image3 from "../../../../public/imgs/red.jpeg"
-import image4 from "../../../../public/imgs/black.jpeg"
-import image5 from "../../../../public/imgs/blue.jpeg"
-import image6 from "../../../../public/imgs/1.jpeg"
-import image7 from "../../../../public/imgs/2.jpeg"
-import image8 from "../../../../public/imgs/3.jpeg"
-import image9 from "../../../../public/imgs/4.jpeg"
+import image1 from "../../../../public/imgs/yellow-one.webp"
+// import image2 from "../../../../public/imgs/yellow-two.webp"
+import image3 from "../../../../public/imgs/red.webp"
+import image4 from "../../../../public/imgs/black.webp"
+import image5 from "../../../../public/imgs/blue.webp"
+import image6 from "../../../../public/imgs/1.webp"
+import image7 from "../../../../public/imgs/2.webp"
+import image8 from "../../../../public/imgs/3.webp"
+import image9 from "../../../../public/imgs/4.webp"
 export type Product = {
     id: string,
     name: string,

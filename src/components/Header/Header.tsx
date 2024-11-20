@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styles from "./header.module.css"
 import Image from 'next/image'
-import logo from "../../../public/imgs/logo-removebg.png"
+import logo from "../../../public/imgs/logo-removebg.webp"
 import Nav from '../Nav/Nav'
 import SocialUl from '../SocialUl/SocialUl'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
