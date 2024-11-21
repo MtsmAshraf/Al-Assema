@@ -4,7 +4,13 @@ import styles from "./float-contact.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-const FloatContact = () => {
+import { useTranslations } from 'use-intl'
+const FloatContact = ({
+    lo
+} : {
+    lo: string
+}) => {
+    const t = useTranslations("FloatContact")
     const [active, setActive] = useState(false)
     useEffect(() => {
         setInterval(() => {
@@ -17,7 +23,7 @@ const FloatContact = () => {
         }, 3000);
     }, [])
   return (
-        <div className={styles.parent}>
+        <div className={lo === "ar" ? styles.parent + " " + styles.ar : styles.parent}>
             <span onClick={(e) => {setActive(false); e.stopPropagation(); e.preventDefault()}} className={active ? styles.overlay + " " + styles.shown : styles.overlay}></span>
             <button className={active ? styles.floatContact + " " + styles.active : styles.floatContact}>
                 <FontAwesomeIcon icon={faInfo} />
@@ -26,8 +32,12 @@ const FloatContact = () => {
                         <FontAwesomeIcon icon={faWhatsapp} />
                     </span>
                     <div>
-                        <a target='_blank' href="https://wa.me/201017047579">Services</a>
-                        <a target='_blank' href="https://wa.me/201096953160">Sales</a>
+                        <a target='_blank' href="https://wa.me/201017047579">
+                            {t("Services")}
+                        </a>
+                        <a target='_blank' href="https://wa.me/201096953160">
+                            {t("Sales")}
+                        </a>
                     </div>
                 </div>
                 <div>
@@ -35,8 +45,12 @@ const FloatContact = () => {
                         <FontAwesomeIcon icon={faPhone} />
                     </span>
                     <div>
-                        <a target='_blank' href="tel:+201017047579">Services</a>
-                        <a target='_blank' href="tel:+201000220174">Sales</a>
+                        <a target='_blank' href="tel:+201017047579">
+                            {t("Services")}
+                        </a>
+                        <a target='_blank' href="tel:+201000220174">
+                            {t("Sales")}
+                        </a>
                     </div>
                 </div>
             </button>

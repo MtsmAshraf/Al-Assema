@@ -36,7 +36,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Header lo={locale}></Header>
           {children}
-          <FloatContact></FloatContact>
+          <FloatContact lo={locale}></FloatContact>
           <Footer lo={locale}></Footer>
         </NextIntlClientProvider>
       </body>

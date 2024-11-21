@@ -115,7 +115,7 @@
                 "H2": "تواصل معنا"
             },
             "Contacts": {
-                "Services": "الخدمات",
+                "Services": "الصيانة",
                 "Sales": "المبيعات"
             },
             "Location": {
@@ -128,5 +128,9 @@
                 }
             }
         }
+    },
+    "FloatContact": {
+        "Services": "الصيانة",
+        "Sales": "المبيعات"
     }
   }

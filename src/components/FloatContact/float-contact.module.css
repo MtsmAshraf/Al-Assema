@@ -1,3 +1,8 @@
+.parent *{
+    font-family: "Poppins", sans-serif;
+}.parent.ar *{
+    font-family: "Tajawal", sans-serif;
+}
 .floatContact{
     position: fixed;
     bottom: 30px;
@@ -11,6 +16,7 @@
 .floatContact *{
     pointer-events: none;
 }
+
 .overlay{
     position: fixed;
     height: 100vh;
