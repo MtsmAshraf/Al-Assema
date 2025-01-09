@@ -24,7 +24,7 @@ const Contact = ({
                 </h3> */}
                 <div>
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="/tel:+201000220174">
+                    <a target='_blank' className={styles.iconLink} href="tel:+201000220174">
                       <FontAwesomeIcon icon={faPhone} />
                     </a>
                     <div>
