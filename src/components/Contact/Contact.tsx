@@ -24,7 +24,7 @@ const Contact = ({
                 </h3> */}
                 <div>
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="/">
+                    <a target='_blank' className={styles.iconLink} href="/tel:+201000220174">
                       <FontAwesomeIcon icon={faPhone} />
                     </a>
                     <div>
@@ -37,7 +37,7 @@ const Contact = ({
                     </div>
                   </div>  
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="/">
+                    <a target='_blank' className={styles.iconLink} href="tel:+201017047579">
                       <FontAwesomeIcon icon={faPhone} />
                     </a>
                     <div>
@@ -45,7 +45,7 @@ const Contact = ({
                         {t('Contact.Contacts.Services')}
                       </span>  
                       <a target='_blank' href="tel:+201017047579">
-                        +01017047579
+                        +201017047579
                       </a>
                     </div>
                   </div>  
@@ -57,7 +57,7 @@ const Contact = ({
                 </h3> */}
                 <div>
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="/">
+                    <a target='_blank' className={styles.iconLink} href="https://wa.me/201096953160">
                       <FontAwesomeIcon icon={faWhatsapp} />
                     </a>
                     <div>
@@ -65,12 +65,12 @@ const Contact = ({
                           {t('Contact.Contacts.Sales')}
                         </span>  
                       <a target='_blank' href="https://wa.me/201096953160">
-                        +01096953160
+                        +201096953160
                       </a>
                     </div>
                   </div>  
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="/">
+                    <a target='_blank' className={styles.iconLink} href="https://wa.me/201017047579">
                       <FontAwesomeIcon icon={faWhatsapp} />
                     </a>
                     <div>
@@ -90,7 +90,7 @@ const Contact = ({
                 </h3> */}
                 <div>
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="/">
+                    <a target='_blank' className={styles.iconLink} href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
                       <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                     <div>
