@@ -48,6 +48,8 @@
 }
 .services .servicesCards .card > span > svg{
     width: 80%;
+    height: 100%;
+    object-fit: contain;
 }
 .services .servicesCards .card:last-child > span > svg{
     width: 100%;
